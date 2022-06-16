@@ -38,6 +38,7 @@ function displayText(){
     cards.textContent = `Cards:`
     sum.textContent = `Sum:`
     newBtn.classList.remove("display")
+    text.textContent = `want to play a round?`
     }, 2000)
   }
 }
