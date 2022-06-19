@@ -4,12 +4,14 @@ const sum = document.querySelector(".sum")
 const startBtn = document.querySelector(".start")
 const newBtn = document.querySelector(".new")
 
-let Num1 = randomNumber()
-let Num2 = randomNumber()
+let Num1;
+let Num2;
 let Total;
 
 startBtn.addEventListener("click", ()=>{
   reset()
+  Num1 = randomNumber()
+  Num2 = randomNumber() 
   cards.textContent += ` ${Num1} ${Num2}`
   Total = Num1 + Num2
   sum.textContent += ` ${Total}`
@@ -44,6 +46,7 @@ function displayText(){
 }
 
 function reset(){
-  cards.textContent = `Cards:`
-  sum.textContent = `Sum:`
+  cards.textContent = `Cards: `
+  Total;
+  sum.textContent = `Sum: `
 }
