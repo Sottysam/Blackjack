@@ -49,6 +49,7 @@ button{
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .new{
